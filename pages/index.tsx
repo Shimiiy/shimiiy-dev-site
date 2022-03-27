@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import Index from '../components/index'
+import Navbar from '../components/navbar'
 
 const Home: NextPage = () => {
   return (
@@ -14,9 +15,8 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <h1>
-          <Index />
-        </h1>
+        <Navbar />
+        <Index />
       </main>
       
     </div>
