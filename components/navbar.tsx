@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
           <Link href="/">
             <a>Shimiiy / シミー</a>
           </Link>
-        </li>  
+        </li>
         <li>About Me</li>
         <li>Works</li>
         <li>

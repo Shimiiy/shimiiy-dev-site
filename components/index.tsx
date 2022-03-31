@@ -1,9 +1,13 @@
+import Box from "./box"
 
 const Index = () => {
   return (
-    <p className="p-5">
-      にゃーーーーん？
-    </p>
+    <div>
+      <p className="p-5">
+        にゃーーーーん？
+      </p>
+      <Box text="Hello World" />
+    </div>
   )
 }
 
