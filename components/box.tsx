@@ -1,13 +1,10 @@
 import React from "react"
 
-type Props = {
-  text: string
-}
 
-const Box = ({ text }: Props) => {
+const Box: React.FunctionComponent = ({children}) => {
   return (
     <div className="flex p-4 m-1 bg-green-400 rounded-md">
-      <p>{ text }</p>
+      <div>{children}</div>
     </div>
   )
 }

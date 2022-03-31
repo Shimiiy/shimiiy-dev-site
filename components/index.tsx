@@ -6,7 +6,10 @@ const Index = () => {
       <p className="p-5">
         にゃーーーーん？
       </p>
-      <Box text="Hello World" />
+      <Box>
+        This is a paragraph.
+        <br /> Hello, world.
+      </Box>
     </div>
   )
 }
