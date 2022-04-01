@@ -7,8 +7,7 @@ const Index = () => {
         にゃーーーーん？
       </p>
       <Box>
-        This is a paragraph.
-        <br /> Hello, world.
+        <p className="text-center text-red-700">Nyapaaaa</p>
       </Box>
     </div>
   )
