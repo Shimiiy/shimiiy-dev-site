@@ -1,25 +1,34 @@
 import React from "react";
 
 import Link from "next/link"
+import Image from "next/image";
+import logo from '../images/shim_logo.svg';
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="text-3xl font-serif bg-sky-800 text-white p-4">
-      <ul className="flex space-x-10">
-        <li>
+    <nav className="relative container mx-auto p-6">
+      <div className="flex items-center justify-between">
+        {/* Logo */}
+        <div className="pt-2 w-56 mx-auto md:mx-0">
+          <Image src={logo} alt='icon' layout="responsive"/>
+        </div>
+        <div className="hidden space-x-6 md:flex">
           <Link href="/">
-            <a>Shimiiy / シミー</a>
+            About Me
           </Link>
-        </li>
-        <li>About Me</li>
-        <li>Works</li>
-        <li>
-          <Link href="/contact">
-            <a>Contact</a>
+          <Link href="/">
+            About Me
           </Link>
-        </li>
-      </ul>
+          <Link href="/">
+            About Me
+          </Link>
+          <Link href="/">
+            About Me
+          </Link>
+        </div>
+      </div>
     </nav>
+    
   )
 }
 
