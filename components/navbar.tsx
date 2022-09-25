@@ -17,13 +17,10 @@ const Navbar: React.FC = () => {
             About Me
           </Link>
           <Link href="/">
-            About Me
+            Works
           </Link>
           <Link href="/">
-            About Me
-          </Link>
-          <Link href="/">
-            About Me
+            Contact
           </Link>
         </div>
       </div>
