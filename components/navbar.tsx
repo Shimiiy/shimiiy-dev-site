@@ -2,6 +2,7 @@ import React from "react";
 
 import Link from "next/link"
 import Image from "next/image";
+import ContactButton from "./buttons/contactButton";
 import logo from '../public/shim_logo.svg';
 
 const Navbar: React.FC = () => {
@@ -14,14 +15,28 @@ const Navbar: React.FC = () => {
         </div>
         <div className="hidden space-x-6 md:flex">
           <Link href="/">
+            Home
+          </Link>
+          <Link href="/about-me">
             About Me
           </Link>
-          <Link href="/">
-            Works
+          <Link href="/projects">
+            Projects
           </Link>
-          <Link href="/">
-            Contact
+          <Link href="/artworks">
+            Artworks
           </Link>
+          <Link href="/blog">
+            Blog
+          </Link>
+        </div>
+        {/* Button */}
+        <ContactButton linkAddress="/contact">
+          Contact Me!
+        </ContactButton>
+        {/* Hamburger Menu */}
+        <div>
+
         </div>
       </div>
     </nav>
