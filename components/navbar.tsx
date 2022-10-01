@@ -17,21 +17,21 @@ const Navbar: React.FC = () => {
           <Link href="/">
             Home
           </Link>
-          <Link href="/">
+          <Link href="/about-me">
             About Me
           </Link>
-          <Link href="/">
+          <Link href="/projects">
             Projects
           </Link>
-          <Link href="/">
+          <Link href="/artworks">
             Artworks
           </Link>
-          <Link href="/">
+          <Link href="/blog">
             Blog
           </Link>
         </div>
         {/* Button */}
-        <ContactButton linkAddress="/">
+        <ContactButton linkAddress="/contact">
           Contact Me!
         </ContactButton>
         {/* Hamburger Menu */}
