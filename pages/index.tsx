@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import { useState } from 'react'
 import Image from 'next/image'
 import HeadInfo from '../components/headinfo'
-import Index from '../components/index'
+import Hero from '../components/hero'
 import Navbar from '../components/navbar'
 
 const Home: NextPage = () => {
@@ -11,7 +11,7 @@ const Home: NextPage = () => {
       <HeadInfo />
       <main>
         <Navbar />
-        <Index />
+        <Hero />
       </main>
       
     </div>
