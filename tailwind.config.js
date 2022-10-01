@@ -11,6 +11,8 @@ module.exports = {
       colors: {
         blueTintBlack: '#4C4C64',
         blueTintBlackLighter: '#8585AB',
+        yellowShim: '#EACF6C',
+        yellowShimLighter: '#EBD88E',
       }
     },
   },
