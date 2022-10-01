@@ -7,7 +7,7 @@ import logo from '../public/shim_logo.svg';
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="relative container mx-auto p-6">
+    <nav className="relative container mx-auto p-6 bg-white rounded-xl">
       <div className="flex items-center justify-between">
         {/* Logo */}
         <div className="pt-2 w-56 mx-auto md:mx-0">
