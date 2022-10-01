@@ -7,7 +7,7 @@ import Navbar from '../components/navbar'
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div className='bg-gradient-to-b from-blueTintBlack to-[#0B6085]'>
       <HeadInfo />
       <main>
         <Navbar />
