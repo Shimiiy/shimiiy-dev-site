@@ -2,7 +2,7 @@ import React from "react";
 
 import Link from "next/link"
 import Image from "next/image";
-import Button from "./button";
+import ContactButton from "./buttons/contactButton";
 import logo from '../public/shim_logo.svg';
 
 const Navbar: React.FC = () => {
@@ -29,12 +29,11 @@ const Navbar: React.FC = () => {
           <Link href="/">
             Blog
           </Link>
-          <Link href="/">
-            Contact Me
-            {/* change to Button later */}
-          </Link>
         </div>
         {/* Button */}
+        <ContactButton linkAddress="/">
+          Contact Me!
+        </ContactButton>
         {/* Hamburger Menu */}
         <div>
 
