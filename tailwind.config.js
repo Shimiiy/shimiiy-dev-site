@@ -7,7 +7,12 @@ module.exports = {
     fontFamily: {
       sans: "Quicksand"
     },
-    extend: {},
+    extend: {
+      colors: {
+        blueTintBlack: '#4C4C64',
+        blueTintBlackLighter: '#8585AB',
+      }
+    },
   },
   plugins: [],
 }
