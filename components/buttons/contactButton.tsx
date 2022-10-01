@@ -12,7 +12,7 @@ const ContactButton: React.FC<Props> = ({
 }) => {
   return (
     <Link href={linkAddress}>
-      <a className="hidden p-3 px-6 pt-2 text-white bg-[#DD8029] rounded-2xl hover:bg-[#F2B98E] md:block">
+      <a className="hidden p-3 px-6 pt-2 text-white bg-orangeShim rounded-2xl hover:bg-orangeShimLighter md:block">
         {children}
       </a>
     </Link>

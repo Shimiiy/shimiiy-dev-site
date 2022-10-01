@@ -9,6 +9,8 @@ module.exports = {
     },
     extend: {
       colors: {
+        orangeShim: '#DD8029',
+        orangeShimLighter: '#F2B98E',
         blueTintBlack: '#4C4C64',
         blueTintBlackLighter: '#8585AB',
         yellowShim: '#EACF6C',
