@@ -19,7 +19,7 @@ const ProjectHighlights = () => {
             Project Highlights
           </h1>
           <Box>
-            <div className="md:mr-6">
+            <div className="md:mr-6 mx-auto">
               <Image src={shimPlaceholderPic} alt="Shimiiy Placeholder" width={400} height={400}/>
             </div>
             <div>
