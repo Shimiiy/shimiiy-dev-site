@@ -6,7 +6,7 @@ interface Props {
   linkAddress: string;
 }
 
-const ProjectButton: React.FC<Props> = ({
+const ArtworkButton: React.FC<Props> = ({
   children,
   linkAddress
 }) => {
@@ -19,4 +19,4 @@ const ProjectButton: React.FC<Props> = ({
   )
 }
 
-export default ProjectButton
+export default ArtworkButton
