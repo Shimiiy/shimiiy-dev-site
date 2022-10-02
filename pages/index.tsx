@@ -9,11 +9,13 @@ import ArtworkHighlights from '../components/artworkHighlight'
 
 const Home: NextPage = () => {
   return (
-    <div className='bg-gradient-to-b from-blueTintBlack to-[#0B6085]'>
+    <div>
       <HeadInfo />
       <main>
         <Navbar />
-        <Hero />
+        <div className='bg-gradient-to-b from-blueTintBlack to-[#0B6085]'>
+          <Hero />
+        </div>
         <ProjectHighlights /> 
         <ArtworkHighlights />
       </main>
