@@ -8,6 +8,7 @@ import Navbar from '../components/navbar'
 import ProjectHighlights from '../components/projectHighlight'
 import ArtworkHighlights from '../components/artworkHighlight'
 import ContactForm from '../components/contactForm'
+import Footer from '../components/footer'
 
 const Home: NextPage = () => {
   return (
@@ -21,6 +22,7 @@ const Home: NextPage = () => {
         <ProjectHighlights /> 
         <ArtworkHighlights />
         <ContactForm />
+        <Footer />
       </main>
     </div>
   )
