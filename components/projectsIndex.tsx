@@ -2,6 +2,7 @@ import Box from "./box"
 import shimPlaceholderPic from "../public/shim_placeholder.png"
 
 import Image from "next/image"
+import ProjectButton from "./buttons/projectButton"
 
 const ProjectHighlights = () => {
   return (
@@ -40,6 +41,12 @@ const ProjectHighlights = () => {
                   <li>My own blog</li>
                   <li>Japanese support/日本語対応</li>
                 </ul>
+              </div>
+              <div className="font-bold my-4">
+                <p>This is <span className="text-blue-400">the only project I&apos;ve published</span> at the moment! Expect more to come.</p>
+                <div className="my-6 md:w-1/2 md:mx-0">
+                  <ProjectButton linkAddress="/projects">See other projects</ProjectButton>
+                </div>
               </div>
             </div>
           </Box>
