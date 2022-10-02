@@ -12,7 +12,7 @@ const ProjectButton: React.FC<Props> = ({
 }) => {
   return (
     <Link href={linkAddress}>
-      <a className="hidden p-3 px-6 pt-2 text-white bg-blueTintBlack rounded-2xl hover:bg-blueTintBlackLighter md:block">
+      <a className="font-bold text-center p-6 py-3 rounded-2xl text-white bg-blueTintBlack hover:bg-blueTintBlackLighter">
         {children}
       </a>
     </Link>

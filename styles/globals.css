@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  section {
+    /* make sure to include this for wavy borders */
+    position: relative;
+  }
+  /* Hero section wavy border */
+  .custom-shape-divider-top-1664697866 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+
+  .custom-shape-divider-top-1664697866 svg {
+      position: relative;
+      display: block;
+      width: calc(122% + 1.3px);
+      height: 56px;
+  }
+
+  .custom-shape-divider-top-1664697866 .shape-fill {
+      fill: #0B6085;
+  }
+}
