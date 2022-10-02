@@ -28,4 +28,25 @@
   .custom-shape-divider-top-1664697866 .shape-fill {
       fill: #0B6085;
   }
+  /* Project Highlight section wavy border */
+  .artwork-curve {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+
+  .artwork-curve svg {
+      position: relative;
+      display: block;
+      width: calc(122% + 1.3px);
+      height: 56px;
+  }
+
+  .artwork-curve .shape-fill {
+      fill: #29B2DD;
+  }
 }
