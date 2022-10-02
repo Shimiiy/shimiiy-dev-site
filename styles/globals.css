@@ -7,6 +7,7 @@
     /* make sure to include this for wavy borders */
     position: relative;
   }
+
   /* Hero section wavy border */
   .project-curve {
     position: absolute;
@@ -28,6 +29,8 @@
   .project-curve .shape-fill {
       fill: #0B6085;
   }
+
+
   /* Project Highlight section wavy border */
   .artwork-curve {
     position: absolute;
@@ -49,4 +52,26 @@
   .artwork-curve .shape-fill {
       fill: #29B2DD;
   }
+
+  /* Project Highlight section wavy border */
+    .contact-curve {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+      transform: rotate(180deg);
+    }
+  
+    .contact-curve svg {
+        position: relative;
+        display: block;
+        width: calc(122% + 1.3px);
+        height: 56px;
+    }
+  
+    .contact-curve .shape-fill {
+        fill: #DD8029;
+    }
 }
