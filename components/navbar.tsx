@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
           Contact Me!
         </ContactButton>
         {/* Hamburger Menu */}
-        <div>
+        <div className="md:hidden">
 
         </div>
       </div>
