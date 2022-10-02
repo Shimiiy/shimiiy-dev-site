@@ -5,6 +5,7 @@ import HeadInfo from '../components/headinfo'
 import Hero from '../components/hero'
 import Navbar from '../components/navbar'
 import ProjectHighlights from '../components/projectHighlight'
+import ArtworkHighlights from '../components/artworkHighlight'
 
 const Home: NextPage = () => {
   return (
@@ -14,6 +15,7 @@ const Home: NextPage = () => {
         <Navbar />
         <Hero />
         <ProjectHighlights /> 
+        <ArtworkHighlights />
       </main>
     </div>
   )
