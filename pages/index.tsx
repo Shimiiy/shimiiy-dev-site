@@ -4,7 +4,7 @@ import Image from 'next/image'
 import HeadInfo from '../components/headinfo'
 import Hero from '../components/hero'
 import Navbar from '../components/navbar'
-import ProjectHighlights from '../components/projectsIndex'
+import ProjectHighlights from '../components/projectHighlight'
 
 const Home: NextPage = () => {
   return (
