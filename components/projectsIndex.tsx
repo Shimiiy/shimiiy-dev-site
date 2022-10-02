@@ -1,3 +1,8 @@
+import Box from "./box"
+import shimPlaceholderPic from "../public/shim_placeholder.png"
+
+import Image from "next/image"
+
 const ProjectHighlights = () => {
   return (
     <section className="bg-gradient-to-b from-[#7AFEDE] to-[#29B2DD]">
@@ -8,9 +13,21 @@ const ProjectHighlights = () => {
       </div>
       <div className="pt-20" />
       <div className="container flex flex-col md:flex-row items-center px-6 mx-auto py-10 space-y-0 md:space-y-0">
-        <h1 className="font-bold text-4xl text-blueTintBlack">
-          Project Highlights
-        </h1>
+        <div className="flex flex-col mb-16 mx-auto md:w-2/3 md:mx-0 md:mb-32">
+          <h1 className="font-bold text-4xl text-blueTintBlack mb-8">
+            Project Highlights
+          </h1>
+          <Box>
+            <div className="flex flex-col md:flex-row">
+              <div className="mr-6">
+                <Image src={shimPlaceholderPic} alt="Shimiiy Placeholder" width={400} height={400}/>
+              </div>
+              <div>
+                <h2 className="font-semibold text-3xl py-4 text-left">Shimiiy.dev</h2>
+              </div>
+            </div>
+          </Box>
+        </div>
       </div>
     </section>
   )
