@@ -18,13 +18,11 @@ const ProjectHighlights = () => {
             Project Highlights
           </h1>
           <Box>
-            <div className="flex flex-col md:flex-row">
-              <div className="mr-6">
-                <Image src={shimPlaceholderPic} alt="Shimiiy Placeholder" width={400} height={400}/>
-              </div>
-              <div>
-                <h2 className="font-semibold text-3xl py-4 text-left">Shimiiy.dev</h2>
-              </div>
+            <div className="md:mr-6">
+              <Image src={shimPlaceholderPic} alt="Shimiiy Placeholder" width={400} height={400}/>
+            </div>
+            <div>
+              <h2 className="font-semibold text-3xl py-4 text-left">Shimiiy.dev</h2>
             </div>
           </Box>
         </div>
