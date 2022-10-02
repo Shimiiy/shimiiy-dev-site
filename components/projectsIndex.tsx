@@ -23,6 +23,24 @@ const ProjectHighlights = () => {
             </div>
             <div>
               <h2 className="font-semibold text-3xl py-4 text-left">Shimiiy.dev</h2>
+              <div className="flex flex-row space-x-2 pb-2 items-baseline">
+                <h3 className="font-regular text-lg text-left">Made with:</h3>
+                <p className="font-semibold">React(Next.js),</p>
+                <p className="font-semibold">TypeScript,</p>
+                <p className="font-semibold">Tailwind CSS</p>
+              </div>
+              <div className="font-light">
+                <p>I wrote this website as a testimonial of my web design/coding skills.</p>
+                <p>In the future, I wish to utilise React&apos;s state system to the fullest, and sprinkle some 3DCG magic I learnt from my YouTube career for <u>Shimiiy.dev</u>.</p>
+                <h4 className="font-semibold my-2 text-lg">Things I want to implement</h4>
+                <ul className="mx-4 list-disc">
+                  <li>Project database</li>
+                  <li>Artwork database</li>
+                  <li>Interactable 3D avatar in hero section</li>
+                  <li>My own blog</li>
+                  <li>Japanese support/日本語対応</li>
+                </ul>
+              </div>
             </div>
           </Box>
         </div>
