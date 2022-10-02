@@ -12,7 +12,7 @@ const ArtworkButton: React.FC<Props> = ({
 }) => {
   return (
     <Link href={linkAddress}>
-      <a className="hidden p-3 px-6 pt-2 text-blueTintBlack bg-yellowShim rounded-2xl hover:bg-yellowShimLighter md:block">
+      <a className="font-bold text-center p-6 py-3 rounded-2xl text-blueTintBlack bg-yellowShim hover:bg-yellowShimLighter">
         {children}
       </a>
     </Link>
