@@ -7,9 +7,9 @@ import githubLogo from "../public/icons8-github.svg"
 
 const Footer = () => {
   return (
-    <footer className="container flex flex-col px-6 mx-auto space-y-0 bg-white m-6 ">
-      <div className="justify-between">
-        <ul className="list-disc">
+    <footer className="container flex flex-col justify-between m-6 px-6 mx-auto space-y-6 bg-white">
+      <div className="flex justify-between">
+        <ul className="list-disc mx-6">
           <li>
             <Link href="/">
               Home
@@ -36,8 +36,8 @@ const Footer = () => {
             </Link>
           </li>
         </ul>
-        <div className="mb-6 mx-auto md:w-1/2 md:mx-0">
-          <div className="flex space-x-2 my-3 mx-auto md:mx-0">
+        <div className="m-6 mt-0 flex flex-col">
+          <div className="flex space-x-6 my-3 mx-auto md:mx-0">
             <a href="https://www.youtube.com/channel/UClXWVfHTOeGPznaPYspWqeQ">
               <Image src={youtubeLogo} alt="YouTube" width={36} height={36} />
             </a>
@@ -55,8 +55,10 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-      <h1>© SHIMIIY.DEV 2022</h1>
-      <h2>Social Media Icons provided by Icons8</h2>
+      <div className="flex mx-auto flex-col items-center">
+        <h1>© SHIMIIY.DEV 2022</h1>
+        <h2>Social Media Icons provided by Icons8</h2>
+      </div>
     </footer>
   )
 }
