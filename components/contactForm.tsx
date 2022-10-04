@@ -19,7 +19,7 @@ const ContactForm = () => {
             </div>
             <div className="w-full md:w-1/2 md:pl-6">
               <label htmlFor="message">Message</label><br />
-              <input type="message" id="message" name="message" className="rounded-lg w-full mb-6 text-black"></input><br />
+              <textarea id="message" name="message" rows={5} cols={33} className="rounded-lg w-full mb-6 text-black"></textarea><br />
               <input type="submit" value="Send Email" className="font-bold text-center p-6 py-3 text-white rounded-2xl bg-orangeShim hover:bg-orangeShimLighter"></input>      
             </div>
           </div>
