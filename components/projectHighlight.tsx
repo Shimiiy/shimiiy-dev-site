@@ -14,7 +14,7 @@ const ProjectHighlights = () => {
       </div>
       <div className="pt-20" />
       <div className="container flex flex-col md:flex-row items-center px-6 mx-auto py-10 space-y-0 md:space-y-0">
-        <div className="flex flex-col mb-16 mx-auto md:w-2/3 md:mx-0 md:mb-32">
+        <div className="flex flex-col mb-16 mx-auto md:mx-0 md:mb-32">
           <h1 className="font-bold text-4xl text-blueTintBlack mb-8">
             Project Highlights
           </h1>
@@ -44,7 +44,7 @@ const ProjectHighlights = () => {
               </div>
               <div className="font-bold my-4">
                 <p>This is <span className="text-blue-400">the only project I&apos;ve published</span> at the moment! Expect more to come.</p>
-                <div className="my-6 md:w-1/2 md:mx-0">
+                <div className="my-6 mx-auto">
                   <ProjectButton linkAddress="/projects">See other projects</ProjectButton>
                 </div>
               </div>

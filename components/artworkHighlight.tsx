@@ -39,7 +39,7 @@ const ArtworkHighlight = () => {
               </div>
               <div className="font-bold my-4">
                 <p>This is <span className="text-blue-400">the only artwork I&apos;ve published</span> at the moment! Expect more to come.</p>
-                <div className="my-6 md:w-1/2 md:mx-0">
+                <div className="my-6 mx-auto">
                   <ArtworkButton linkAddress="/artworks">See other artworks</ArtworkButton>
                 </div>
               </div>
