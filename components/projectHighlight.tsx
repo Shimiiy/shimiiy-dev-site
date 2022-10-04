@@ -44,7 +44,7 @@ const ProjectHighlights = () => {
               </div>
               <div className="font-bold my-4">
                 <p>This is <span className="text-blue-400">the only project I&apos;ve published</span> at the moment! Expect more to come.</p>
-                <div className="my-6 md:w-1/2 md:mx-0">
+                <div className="my-6 mx-auto">
                   <ProjectButton linkAddress="/projects">See other projects</ProjectButton>
                 </div>
               </div>
