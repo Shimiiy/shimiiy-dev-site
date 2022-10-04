@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
         <div className="pt-2 w-56 mx-auto md:mx-0">
           <Image src={logo} alt='icon' layout="responsive"/>
         </div>
-        <div className="hidden space-x-6 md:flex">
+        <div className="hidden space-x-3 lg:space-x-9 md:flex">
           <Link href="/">
             Home
           </Link>
