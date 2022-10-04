@@ -7,7 +7,7 @@ import githubLogo from "../public/icons8-github.svg"
 
 const Footer = () => {
   return (
-    <footer className="container flex flex-col justify-between m-6 px-6 mx-auto space-y-6 bg-white">
+    <footer className="container flex flex-col m-6 px-6 md:px-32 mx-auto space-y-6 bg-white">
       <div className="flex justify-between">
         <ul className="list-disc mx-6">
           <li>
