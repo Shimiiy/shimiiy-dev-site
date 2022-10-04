@@ -14,7 +14,7 @@ const ProjectHighlights = () => {
       </div>
       <div className="pt-20" />
       <div className="container flex flex-col md:flex-row items-center px-6 mx-auto py-10 space-y-0 md:space-y-0">
-        <div className="flex flex-col mb-16 mx-auto md:w-2/3 md:mx-0 md:mb-32">
+        <div className="flex flex-col mb-16 mx-auto md:mx-0 md:mb-32">
           <h1 className="font-bold text-4xl text-blueTintBlack mb-8">
             Project Highlights
           </h1>
