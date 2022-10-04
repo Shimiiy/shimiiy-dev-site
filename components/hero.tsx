@@ -28,7 +28,7 @@ const Hero = () => {
             <Image src={githubLogo} alt="Github" width={36} height={36} />
           </a>
         </div>
-        <div className="my-6 mx-auto md:w-1/2 md:mx-0">
+        <div className="my-6 mx-auto md:mx-0">
           <Link href="/contact">
             <a className="font-bold text-center p-6 py-3 text-white rounded-2xl bg-orangeShim hover:bg-orangeShimLighter">
               Contact Me!
