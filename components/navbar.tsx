@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Link from "next/link"
 import Image from "next/image";
 import ContactButton from "./buttons/contactButton";
 import logo from '../public/shim_logo.svg';
+import {Slant as Hamburger} from "hamburger-react";
 
 const Navbar: React.FC = () => {
+  const [isOpen, setOpen] = useState(false);
   return (
     <nav className="relative container mx-auto p-6 bg-white md:rounded-xl">
       <div className="flex items-center justify-between">
@@ -36,7 +38,7 @@ const Navbar: React.FC = () => {
         </ContactButton>
         {/* Hamburger Menu */}
         <div className="md:hidden">
-
+          <Hamburger toggled={isOpen} toggle={setOpen} />
         </div>
       </div>
     </nav>
