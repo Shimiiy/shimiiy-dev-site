@@ -5,6 +5,7 @@ import Image from "next/image"
 import Link from "next/link"
 
 import shimPlaceholderPic from "../public/shim_placeholder.png"
+import shimRotateGIF from "../public/shimRotateTransparent.gif"
 import youtubeLogo from "../public/icons8-youtube.svg"
 import twitterLogo from "../public/icons8-twitter.svg"
 import githubLogo from "../public/icons8-github.svg"
@@ -37,7 +38,7 @@ const Hero = () => {
         </div>
       </div>
       <div>
-        <Image src={shimPlaceholderPic} alt="Shimiiy Placeholder" width={400} height={400}/>
+        <Image src={shimRotateGIF} alt="Shimiiy Placeholder" width={960} height={540}/>
       </div>
     </div>
   )
