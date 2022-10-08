@@ -41,6 +41,25 @@ const Navbar: React.FC = () => {
           <Hamburger toggled={isOpen} toggle={setOpen} />
         </div>
       </div>
+      {isOpen && 
+        <div className="absolute flex md:hidden flex-col self-end items-center py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md z-50">
+          <Link href="/">
+            Home
+          </Link>
+          <Link href="/about-me">
+            About Me
+          </Link>
+          <Link href="/projects">
+            Projects
+          </Link>
+          <Link href="/artworks">
+            Artworks
+          </Link>
+          <Link href="/blog">
+            Blog
+          </Link>
+        </div>
+      }
     </nav>
     
   )
