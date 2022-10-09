@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.7.0",
     "hamburger-react": "^2.5.0",
     "next": "12.1.0",
     "react": "17.0.2",
