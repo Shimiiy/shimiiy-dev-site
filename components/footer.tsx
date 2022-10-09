@@ -48,7 +48,7 @@ const Footer = () => {
               <Image src={githubLogo} alt="Github" width={36} height={36} />
             </a>
           </div>
-          <Link href="/contact">
+          <Link href="/#sendEmail">
             <a className="font-bold text-center p-6 py-3 text-white rounded-2xl bg-orangeShim hover:bg-orangeShimLighter">
               Contact Me!
             </a>
