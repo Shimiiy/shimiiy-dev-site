@@ -12,6 +12,9 @@ const ContactForm = () => {
     const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
     const userID = process.env.NEXT_PUBLIC_EMAILJS_USER_ID;
 
+    console.log(serviceID + " " + templateID + " " + userID)
+    console.log("form.current = " + form.current);
+
     if (serviceID && templateID && userID && form.current) {  {/* やっつけで実装、動くかなぁ… */}
       emailjs.sendForm(serviceID, templateID, form.current, userID)
       .then((result) => {
@@ -20,7 +23,7 @@ const ContactForm = () => {
       }, (error) => {
         window.alert('Uh oh, message was not sent. Have you filled up all the forms?');
         console.log(error.text);
-      })
+      });
     };
   };
 
@@ -42,7 +45,7 @@ const ContactForm = () => {
           I also accept messages through <span className="underline">social media.</span>
         </p>
         {/* Form */}
-        <form ref={form} className="text-white">
+        <form ref={form} onSubmit={sendEmail} className="text-white">
           <div className="flex flex-col md:flex-row py-6 justify-between">
             <div className="w-full md:w-1/2 md:pr-6 pb-6">
               <label htmlFor="from_name">Name</label><br />
@@ -53,7 +56,7 @@ const ContactForm = () => {
             <div className="w-full md:w-1/2 md:pl-6">
               <label htmlFor="message">Message</label><br />
               <textarea id="message" name="message" rows={5} cols={33} className="rounded-lg w-full mb-6 text-black p-2" required></textarea><br />
-              <button type="submit" className="font-bold text-center p-6 py-3 text-white rounded-2xl bg-orangeShim hover:bg-orangeShimLighter">Send Email</button>      
+              <input type="submit" value="Send Email" className="font-bold text-center p-6 py-3 text-white rounded-2xl bg-orangeShim hover:bg-orangeShimLighter"></input>      
             </div>
           </div>
         </form>
