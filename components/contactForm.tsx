@@ -8,14 +8,11 @@ const ContactForm = () => {
     e.preventDefault();
 
     // Retrieve IDs from env
+    const userID = process.env.NEXT_PUBLIC_EMAILJS_USER_ID;
     const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
     const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
-    const userID = process.env.NEXT_PUBLIC_EMAILJS_USER_ID;
 
-    console.log(serviceID + " " + templateID + " " + userID)
-    console.log("form.current = " + form.current);
-
-    if (serviceID && templateID && userID && form.current) {  {/* やっつけで実装、動くかなぁ… */}
+    if (serviceID && templateID && userID && form.current) {
       emailjs.sendForm(serviceID, templateID, form.current, userID)
       .then((result) => {
         window.alert('Message sent. Thanks!');
