@@ -8,7 +8,14 @@ const ContactForm = () => {
       </div>
       <div className="pt-20" /> {/* This div is here to prevent the text being covered by the curves */}
       <div className="container px-12 mx-auto py-10 space-y-0 md:space-y-0">
-        <h1 className="font-bold text-4xl text-white md:mr-6">Send me an email</h1>
+        <h1 className="font-bold text-4xl text-white md:mr-6 py-3">Send me an email</h1>
+        <p className="text-white font-light">
+          Interested in my works?
+          <br />
+          Send me a quick message by filling up the form below!
+          <br />
+          I also accept messages through <span className="underline">social media.</span>
+        </p>
         {/* Form */}
         <form action="" className="text-white">
           <div className="flex flex-col md:flex-row py-6 justify-between">
