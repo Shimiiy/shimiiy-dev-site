@@ -14,8 +14,15 @@ const ContactForm = () => {
 
     if (serviceID && templateID && userID && form.current) {  {/* やっつけで実装、動くかなぁ… */}
       emailjs.sendForm(serviceID, templateID, form.current, userID)
-    }
-  }
+      .then((result) => {
+        window.alert('Message sent. Thanks!');
+        console.log(result.text);
+      }, (error) => {
+        window.alert('Uh oh, message was not sent.');
+        console.log(error.text);
+      })
+    };
+  };
 
   return (
     <section id="sendEmail" className="bg-gradient-to-b from-blueTintBlack to-[#0B6085]">
