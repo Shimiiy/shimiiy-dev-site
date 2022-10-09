@@ -38,7 +38,7 @@ const Hero = () => {
         </div>
       </div>
       <div>
-        <Image src={shimRotateGIF} alt="Shimiiy Placeholder" width={960} height={540}/>
+        <Image src={shimRotateGIF} alt="Shimiiy Placeholder" width={960} height={540} unoptimized />
       </div>
     </div>
   )
