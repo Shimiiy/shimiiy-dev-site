@@ -3,14 +3,18 @@ import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
   const form = useRef<HTMLFormElement>(null);
-
   
   const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     // Retrieve IDs from env
-    const userID = process.env.EMAILJS_USER_ID;
+    const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+    const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+    const userID = process.env.NEXT_PUBLIC_EMAILJS_USER_ID;
 
+    if (serviceID && templateID && userID && form.current) {  {/* やっつけで実装、動くかなぁ… */}
+      emailjs.sendForm(serviceID, templateID, form.current, userID)
+    }
   }
 
   return (
