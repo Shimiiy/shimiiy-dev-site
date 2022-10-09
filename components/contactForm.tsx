@@ -1,4 +1,18 @@
+import React, { useRef } from "react";
+import emailjs from '@emailjs/browser';
+
 const ContactForm = () => {
+  const form = useRef<HTMLFormElement>(null);
+
+  
+  const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    // Retrieve IDs from env
+    const userID = process.env.EMAILJS_USER_ID;
+
+  }
+
   return (
     <section id="sendEmail" className="bg-gradient-to-b from-blueTintBlack to-[#0B6085]">
       <div className="contact-curve">
@@ -17,13 +31,13 @@ const ContactForm = () => {
           I also accept messages through <span className="underline">social media.</span>
         </p>
         {/* Form */}
-        <form action="" className="text-white">
+        <form ref={form} className="text-white">
           <div className="flex flex-col md:flex-row py-6 justify-between">
             <div className="w-full md:w-1/2 md:pr-6 pb-6">
-              <label htmlFor="name">Name</label><br />
-              <input type="text" id="name" name="name" placeholder="John Smith" className="rounded-lg w-full mb-3 text-black text-left p-2" required></input><br />
-              <label htmlFor="email">Email</label><br />
-              <input type="email" id="email" name="email" placeholder="johnsmith@email.com" className="rounded-lg w-full text-black p-2" required></input><br />
+              <label htmlFor="from_name">Name</label><br />
+              <input type="text" id="from_name" name="from_name" placeholder="John Smith" className="rounded-lg w-full mb-3 text-black text-left p-2" required></input><br />
+              <label htmlFor="from_email">Email</label><br />
+              <input type="email" id="from_email" name="from_email" placeholder="johnsmith@email.com" className="rounded-lg w-full text-black p-2" required></input><br />
             </div>
             <div className="w-full md:w-1/2 md:pl-6">
               <label htmlFor="message">Message</label><br />
