@@ -18,7 +18,7 @@ const ContactForm = () => {
         window.alert('Message sent. Thanks!');
         console.log(result.text);
       }, (error) => {
-        window.alert('Uh oh, message was not sent.');
+        window.alert('Uh oh, message was not sent. Have you filled up all the forms?');
         console.log(error.text);
       })
     };
