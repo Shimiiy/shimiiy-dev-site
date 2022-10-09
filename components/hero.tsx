@@ -30,7 +30,7 @@ const Hero = () => {
           </a>
         </div>
         <div className="my-6 mx-auto md:mx-0">
-          <Link href="/contact">
+          <Link href="/#sendEmail">
             <a className="font-bold text-center p-6 py-3 text-white rounded-2xl bg-orangeShim hover:bg-orangeShimLighter">
               Contact Me!
             </a>

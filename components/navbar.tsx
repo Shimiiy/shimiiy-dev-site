@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
           </Link>
         </div>
         {/* Button */}
-        <ContactButton linkAddress="/contact">
+        <ContactButton linkAddress="/#sendEmail">
           Contact Me!
         </ContactButton>
         {/* Hamburger Menu */}
