@@ -1,7 +1,7 @@
 # For Visitors
 ## Introduction
 
-This is the GitHub repository for my personal site, Shimiiy.dev. You can access it by (insert link later)
+This is the GitHub repository for my personal site, Shimiiy.dev. You can access it by clicking this link [Shimiiy.dev](https://shimiiy.dev "Shimiiy.dev")
 
 ### Architecture
 - Frontend
